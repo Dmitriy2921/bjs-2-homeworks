@@ -7,8 +7,8 @@ function cachingDecoratorNew(func) {
     const idx = cache.findIndex((item) => hash === item.hash);
 
     if (idx !== -1) {
-      console.log("Из кэша: " + cache[idx].value);
-      return "Из кэша: " + cache[idx].value;
+      console.log("Из кеша: " + cache[idx].value);
+      return "Из кеша: " + cache[idx].value;
     }
 
     let result = func(...args);
